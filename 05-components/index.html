@@ -9,7 +9,9 @@
 </head>
 <body ng-app="components" ng-controller="meuController as vm">
 <my-component text="vm.text"></my-component>
-<my-component text="vm.text" my-func="vm.print('Lulala')"></my-component>
+<my-component text="vm.text" my-func="vm.print('Lulala')">
+  <button>ROLA</button>
+</my-component>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>

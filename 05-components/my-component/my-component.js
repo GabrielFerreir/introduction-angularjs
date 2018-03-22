@@ -4,7 +4,8 @@ angular.module('components').component('myComponent', {
   bindings: {
     text: '<',
     myFunc: '&'
-  }
+  },
+  transclude: true
 });
 
 function MyComponentController() {
@@ -12,5 +13,9 @@ function MyComponentController() {
   vm.onChange = () => {
     console.log('Function from component', vm.text);
     vm.myFunc();
+  }
+
+  vm.$onInit = function () {
+    console.log('Componente iniciado');
   }
 }
