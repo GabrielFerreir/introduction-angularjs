@@ -2,7 +2,7 @@ angular.module('myApp').component('myComponent', {
   templateUrl: 'my-component/my-component.html',
   controller: MyComponentController,
   bindings: {
-    text: '<',
+    text: '=',
     myFunc: '&'
   },
   transclude: true

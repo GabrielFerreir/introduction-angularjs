@@ -10,7 +10,9 @@
 <body ng-app="myApp" ng-controller="meuController as vm">
 <my-component text="vm.text"></my-component>
 
-<h1>{{ 'Gabriel' | myFilter}}</h1>
+<!--<input type="text" ng-model="vm.text"/>-->
+<h1>{{ vm.text }}</h1>
+<h1>{{ vm.text | myFilter}}</h1>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
