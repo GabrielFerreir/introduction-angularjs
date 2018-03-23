@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>11 - Forms</title>
+</head>
+<body ng-app="myApp" ng-controller="myController as vm">
+<form name="myForm" novalidate >
+    <input type="text" name="myName" required ng-model="myName" />
+  <div ng-show="myForm.myName.$invalid && myForm.myName.$dirty">
+    O campo é obrigatorio
+  </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+</body>
+</html>
