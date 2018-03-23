@@ -8,7 +8,9 @@
   <title>Document</title>
 </head>
 <body ng-app="meuApp" ng-controller="meuController as vm">
-<my-directive text="HELLO" my-func="vm.print">
+
+<input my-directive type="text" ng-model="vm.text">
+<!--<my-directive text="HELLO" my-func="vm.print">-->
 
 </my-directive>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
